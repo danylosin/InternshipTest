@@ -1,17 +1,21 @@
+using System.Collections.Generic;
 using InternshipTest.Person;
 
 namespace InternshipTest.Institution
 {
     public class University
     {
+		public string name;
+		public List<Student> students;
         public University(string name)
         {
-            //TODO: Implementation is needed  
+			this.name = name;
+			this.students = new List<Student>();
         }
 
         public void AddStudent(Student student)
         {
-            //TODO: Implementation is needed
-        }
+			this.students.Add(student);
+        }  
     }
 }

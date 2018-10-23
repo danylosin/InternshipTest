@@ -2,9 +2,10 @@ namespace InternshipTest.Institution.InterLink
 {
     public class Internship
     {
+		public string name;
         public Internship(string name)
         {
-            //TODO: Implementation is needed      
+			this.name = name;     
         }
 
         public string GetStudents()
