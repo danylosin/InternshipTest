@@ -9,7 +9,7 @@ namespace InternshipTest
 			this.level = level;
         }
 
-        public int getLevel()
+        public int GetLevel()
         {
             return this.level;
         }

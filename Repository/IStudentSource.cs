@@ -17,10 +17,32 @@ namespace InternshipTest.Repository
         public virtual List <Student> load()
         {
             List<Student> students = new List<Student>();
-			for (int i = 0; i < 30; i++) 
+            string[] names = {
+                "Shawnta Galindo", 
+                "Curt Robichaud",   
+                "Dominick Nightingale",   
+                "Teresa Mcadoo",   
+                "Zona Tolley",   
+                "Lacie Mcateer",   
+                "Dahlia Commons",   
+                "Cherry Deremer",   
+                "Randa Joplin",   
+                "Wendell Hornung",   
+                "Juliet Kirkley",   
+                "Emmy Briski",   
+                "Talisha Calle",   
+                "Laila Windholz",   
+                "Florentina Kinoshita",   
+                "Alayna Garrick",   
+                "Holly Devane",   
+                "Amada Istre",   
+                "Antonina Banach",   
+                "Celsa Romney",   
+            };
+			for (int i = 0; i < names.Length; i++) 
 			{
 				Knowledge knowledge = this.GetRandomKnowLedge();
-				Student student = new Student("Student with knowledge = " + knowledge.getLevel());
+				Student student = new Student(names[i]);
 				student.SetKnowledge(knowledge);
 				students.Add(student);
 			}
@@ -34,6 +56,12 @@ namespace InternshipTest.Repository
 			int index = rnd.Next(0, 4);
 			return this.knowledges[index];
 		}
+        /*
+            Lvl 1 - Low
+            Lvl 2 - Mid
+            Lvl 3 - High
+            Lvl 4 - Pro
+         */
 		protected void GenerateKnowledges()
 		{
 			for (int i = 1; i <= 4; i++) {

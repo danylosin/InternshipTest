@@ -21,7 +21,7 @@ namespace InternshipTest.Institution.InterLink
 			string str = "";
 			foreach (Student student in this.students) 
 			{
-				str += student.name + "\n";               
+				str += student.name + ". Level is " + student.GetKnowledge().GetLevel() +  "\n";               
 			}
 			return str;
 		}
@@ -37,7 +37,7 @@ namespace InternshipTest.Institution.InterLink
 			{
 				foreach (Student student in university.students)
 				{
-					if (student.GetKnowledge().getLevel() > 2)
+					if (student.GetKnowledge().GetLevel() > 2)
 					{
 						this.students.Add(student);
 					}
