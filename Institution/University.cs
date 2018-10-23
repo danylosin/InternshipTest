@@ -16,6 +16,11 @@ namespace InternshipTest.Institution
         public void AddStudent(Student student)
         {
 			this.students.Add(student);
+        }
+
+        public void SetStudents(List<Student> students)
+        {
+            this.students = students;
         }  
     }
 }

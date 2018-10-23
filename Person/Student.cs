@@ -2,7 +2,7 @@ namespace InternshipTest.Person
 {
     public class Student
     {
-		public Knowledge knowledge;
+		protected Knowledge knowledge;
 		public string name;
 
         public Student(string name)
@@ -14,5 +14,10 @@ namespace InternshipTest.Person
         {
 			this.knowledge = knowledge;
         }
+
+		public Knowledge GetKnowledge()
+		{
+			return this.knowledge;
+		}
     }
 }
