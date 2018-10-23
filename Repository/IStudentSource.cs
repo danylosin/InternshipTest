@@ -10,8 +10,8 @@ namespace InternshipTest.Repository
         
         public IStudentSource()
         {
-            this.GenerateKnowledges();
             this.knowledges = new List<Knowledge>();
+            this.GenerateKnowledges();
         }
         public virtual List <Student> load()
         {
