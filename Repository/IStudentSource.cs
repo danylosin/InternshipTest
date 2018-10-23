@@ -13,6 +13,7 @@ namespace InternshipTest.Repository
             this.knowledges = new List<Knowledge>();
             this.GenerateKnowledges();
         }
+
         public virtual List <Student> load()
         {
             List<Student> students = new List<Student>();
@@ -33,7 +34,6 @@ namespace InternshipTest.Repository
 			int index = rnd.Next(0, 4);
 			return this.knowledges[index];
 		}
-
 		protected void GenerateKnowledges()
 		{
 			for (int i = 1; i <= 4; i++) {
