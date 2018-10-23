@@ -7,6 +7,7 @@ namespace InternshipTest.Institution
     {
 		public string name;
 		public List<Student> students;
+        
         public University(string name)
         {
 			this.name = name;

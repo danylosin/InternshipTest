@@ -37,7 +37,7 @@ namespace InternshipTest.Institution.InterLink
 			{
 				foreach (Student student in university.students)
 				{
-					if (student.GetKnowledge().level > 2)
+					if (student.GetKnowledge().getLevel() > 2)
 					{
 						this.students.Add(student);
 					}

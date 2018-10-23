@@ -9,6 +9,7 @@ namespace InternshipTest
     class Program
     {
 		protected List<Knowledge> knowledges = new List<Knowledge>();
+		
 		protected Knowledge GetRandomKnowLedge()
 		{
 			Random rnd = new Random();
